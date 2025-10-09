@@ -1,12 +1,21 @@
 {
   "name": "yan-mcp",
+  "type": "module",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "bin": {
+    "weather": "./build/index.js"
   },
-  "keywords": [],
+  "files": [
+    "build"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
+  },
+  "keywords": [
+    "mcp"
+  ],
   "author": "",
   "license": "ISC",
   "packageManager": "pnpm@10.13.1",
